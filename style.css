@@ -31,3 +31,43 @@
 	font-weight:bold;
 	font-family: 'Montserrat', sans-serif;
 }
+footer{
+	display: flex;
+	background: #EE3325;
+	align-items: center;
+}
+.footer__img-bolinhas{
+	display: flex;
+	justify-content: flex-start;
+	background-color: blue;
+}
+.footer__about{
+	width: 500px;
+	flex-direction: column;
+	align-items: center;
+	background-color: yellow;
+	padding: 5px;
+}
+
+.footer__logoetext{
+	display:flex;
+	font-color: #fff;
+}
+.footer__logo{
+	color: #fff;
+}
+.footer__location{
+	display: flex;
+	color: #fff;
+}
+.footer__location-endereço{
+	display: flex;
+	color: #fff;
+}
+.footer__contatos{
+	display: flex;
+	color: #fff;
+}
+.footer__authorship{
+	align-items: flex-end;
+}
