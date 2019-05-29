@@ -32,19 +32,21 @@
 	font-family: 'Montserrat', sans-serif;
 }
 footer{
+	padding: 10px;
 	display: flex;
 	background: #EE3325;
-	align-items: center;
 }
 .footer__img-bolinhas{
+	width: 239px;
+	height: 228px;
 	display: flex;
-	justify-content: flex-start;
 	background-color: blue;
 }
 .footer__about{
-	width: 500px;
-	flex-direction: column;
-	align-items: center;
+	width: 469px;
+	height: 193px;
+	margin-left: 30px;
+	justify-content: flex-start;
 	background-color: yellow;
 	padding: 5px;
 }
@@ -68,6 +70,22 @@ footer{
 	display: flex;
 	color: #fff;
 }
+.footer__contactinformation-cellphone{
+	display: flex;
+	color: #fff;
+}
+.footer__contactinformation-cell{
+	color: #fff;
+}
+.footer__contact-information-pcell{
+	color: #fff;
+}
+.contactinformation-email{
+
+}
+.footer__contactinformations-pemail{
+	color: #fff;
+}
 .footer__authorship{
-	align-items: flex-end;
+	background-color: green;
 }
