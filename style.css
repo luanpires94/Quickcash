@@ -3,7 +3,6 @@
 	margin: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-}
 .ourproducts{
 	background-color: #0083CA;
 }
@@ -64,7 +63,6 @@
 	width: 46%;
 	margin-bottom: 150px;
 	margin-left: 25%;
-
 }
 @media (max-width: 550px){
 	.ourproducts__divparagraphs{
@@ -172,32 +170,45 @@
 	text-align: left;
 	color: white;	
 }
-
-
-
-
-
-
 /*.agency{
+select, button{
+	border: none;
+	background-color: transparent;
+}
+body{
+	font-size: 16px;
+}
+.agency{
 	display: flex;
+	height: 55vh;
 	justify-content: space-around;
 	padding: 50px 0 50px 0; 
+	margin-top: 60px;
 	background-color: #F8F8F8;
 }
-@media screen and (max-width: 768px){
+@media (max-width: 800px){
 		.agency{
 			flex-wrap: wrap;
 		}
 }
 .agency__title{
-	width:350px;
-	font-size:35px;
+	width:300px;
+	font-size:2rem;
 	font-weight: bold;
 	color:#EE3325;
 	font-family:'Montserrat', sans-serif;
+	position: relative;
+	margin:50px 0 0 0;
+}
+.agency__pictureglobo{
+	width: 300px;
+	position: absolute;
+	overflow: hidden;
+	margin:80px 0 0 -550px;
 }
 .agency__form{
-	width: 200px;
+	width: 100px;
+	padding: 10px;
 	color:#6B6B6B;
 }
 .agency__label{
@@ -205,3 +216,15 @@
 	font-weight:bold;
 	font-family: 'Montserrat', sans-serif;
 }*/
+}
+.button__search{
+	margin: 20px 0 0 50px;
+}
+.agency__blockmap{
+	border:solid 5px #FFFFFF;
+}
+.agency__paragraph--map{
+	color: #6B6B6B;
+	font-size: 1rem;
+	width: 230px;
+}
