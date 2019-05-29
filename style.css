@@ -19,7 +19,7 @@ body{
 	margin-top: 60px;
 	background-color: #F8F8F8;
 }
-@media screen and (max-width: 768px){
+@media (max-width: 800px){
 		.agency{
 			flex-wrap: wrap;
 		}
@@ -52,7 +52,7 @@ body{
 .button__search{
 	margin: 20px 0 0 50px;
 }
-.agency__map{
+.agency__blockmap{
 	border:solid 5px #FFFFFF;
 }
 .agency__paragraph--map{
