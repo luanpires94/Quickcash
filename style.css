@@ -4,53 +4,40 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-.agency{
-	display: flex;
-	justify-content: space-around;
-	padding: 50px 0 50px 0; 
-	background-color: #F8F8F8;
-}
-@media screen and (max-width: 768px){
-		.agency{
-			flex-wrap: wrap;
-		}
-}
-.agency__title{
-	width:350px;
-	font-size:35px;
-	font-weight: bold;
-	color:#EE3325;
-	font-family:'Montserrat', sans-serif;
-}
-.agency__form{
-	width: 200px;
-	color:#6B6B6B;
-}
-.agency__label{
-	font-size: 17px;
-	font-weight:bold;
-	font-family: 'Montserrat', sans-serif;
-}
-footer{
-	padding: 10px;
+.footer{
 	display: flex;
 	background: #EE3325;
+	padding: 12px;
 }
-.footer__img-bolinhas{
+@media (max-width: 768px){
+	{
+		display: flex;
+	}
+}
+.footer__redballs-about{
+	display: flex;
+	align-items: flex-start;
+}
+.footer__redballs{
 	width: 239px;
-	height: 228px;
+	height: 250px;
 	display: flex;
 	background-color: blue;
+}
+@media (max-width: 768px){
+	{
+		display: none;
+	}
 }
 .footer__about{
 	width: 469px;
 	height: 193px;
+	margin-top: 60px;
 	margin-left: 30px;
-	justify-content: flex-start;
+	align-items: center;
 	background-color: yellow;
-	padding: 5px;
+	padding: 0px;
 }
-
 .footer__logoetext{
 	display:flex;
 	font-color: #fff;
@@ -61,6 +48,7 @@ footer{
 .footer__location{
 	display: flex;
 	color: #fff;
+	margin-top: 10px;
 }
 .footer__location-endereço{
 	display: flex;
@@ -81,6 +69,7 @@ footer{
 	color: #fff;
 }
 .contactinformation-email{
+	display: flex;
 
 }
 .footer__contactinformations-pemail{
@@ -88,4 +77,16 @@ footer{
 }
 .footer__authorship{
 	background-color: green;
+	margin-top: 25px;
+}
+.footer__ourinformations{
+	display: flex;
+	flex-direction: column;
+	background-color: green;
+}
+.footer__ourinformations-p{
+	color: #fff;
+}
+.footer__ourinformations-logo{
+
 }
