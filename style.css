@@ -208,7 +208,7 @@ body{
 	width: 300px;
     font-size: 2rem;
     margin: 60px 0 0 0;
-    font-weight: bold;
+    font-weight:;
     color: #EE3325;
     font-family: 'Montserrat', sans-serif;
     position: relative;
@@ -241,7 +241,7 @@ body{
 .agency__label{
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	font-weight: bold;
 	width: 100vw;
 }
 .button__search{
@@ -320,9 +320,11 @@ body{
 	background-color: #FFF3F2;
 	margin: 30px;
 }
-@media (max-width: 768px){
+@media (max-width: 600px){
 	.news__block--responsive{
+		width: 100%;
 		flex-wrap: wrap;
+		margin: 0;
 	}
 }
 .news__title{
@@ -460,18 +462,7 @@ body{
 	width: 100%;
 	padding: 60px 60px 0 60px;
 }
-.aboutnews__block, .aboutnes__blocktwo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border: solid 10px #FFF3F2;
-    border-radius: 10%;
-    align-items: center;
-    background-color: #FFF3F2;
-    margin: 30px;
-}
-.aboutnews__blocktwo{
+.aboutnews__block, .aboutnews__blocktwo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,3 +505,66 @@ body{
 		width: auto;
 	}
 }
+footer{
+	/*width: 100%;*/
+	display: flex;
+	justify-content: space-between;
+	background-color: #EE3325;
+	flex-wrap: wrap;
+}
+@media(max-width: 500px){
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.footer__image{
+	width: 30vw;
+}
+@media(max-width:800px){
+	.footer_image , .footer__ballswhite{
+		display: none;
+	}
+}
+.footer__image--responsive{
+
+}
+@media(max-width: 768px){
+	.footer__image--responsive{
+		display: none;
+	}
+}
+.footer__boxtitle{
+	margin: 70px 0 0 0;
+	line-height: 3;
+}
+
+.footer__contact{
+	display: flex;
+	width: 30vw;
+}
+.desenvolvido__paragraph{
+	font-size: 0.6rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer__textpic{
+	width: 20vw;
+    margin: 50px 0 0 10px;
+}
+.footer__paragraph{
+	font-size: 0.8rem;
+	color: #FFFFFF;
+}
+.footer__link{
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	line-height: 2.5;
+}
+.footer__ballswhite{
+	width: 7vw;
+}
+.footer__copyright{
+	width: 100%;
+	text-align: center;
+}
+
