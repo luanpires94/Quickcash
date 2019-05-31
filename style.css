@@ -6,23 +6,26 @@
 }
 .footer{
 	display: flex;
+	width: 100%;
 	background: #EE3325;
 	padding: 12px;
+	justify-content: space-between;
 }
 @media (max-width: 768px){
 	{
 		display: flex;
 	}
 }
-.footer__redballs-about{
+.footer__redballs-about-ourinformations{
+	width: 97%;
 	display: flex;
-	align-items: flex-start;
+	justify-content: space-between;
+/*	background-color: blue;*/
 }
 .footer__redballs{
 	width: 239px;
-	height: 250px;
+	height: 243px;
 	display: flex;
-	background-color: blue;
 }
 @media (max-width: 768px){
 	{
@@ -30,12 +33,10 @@
 	}
 }
 .footer__about{
-	width: 469px;
-	height: 193px;
-	margin-top: 60px;
-	margin-left: 30px;
+	margin-top: 4%;
+	margin-left: 4%;
 	align-items: center;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	padding: 0px;
 }
 .footer__logoetext{
@@ -46,6 +47,7 @@
 	color: #fff;
 }
 .footer__location{
+	width: 40vw;
 	display: flex;
 	color: #fff;
 	margin-top: 10px;
@@ -66,6 +68,7 @@
 	color: #fff;
 }
 .footer__contact-information-pcell{
+	font-family: Montserrat Alternates;
 	color: #fff;
 }
 .contactinformation-email{
@@ -73,20 +76,33 @@
 
 }
 .footer__contactinformations-pemail{
+	font-family: Monserrat Alternates;
 	color: #fff;
 }
 .footer__authorship{
-	background-color: green;
 	margin-top: 25px;
+/*	background-color: green;*/
+}
+.footer__authorship-p{
+	font-family: Monserrat Alternates;
+	color: #00000069;
+}
+@media (max-width: 768px){
+	{
+		min-width: 160%;
+	} 
 }
 .footer__ourinformations{
 	display: flex;
 	flex-direction: column;
-	background-color: green;
+	margin-top: 5px;
+	line-height: 2;
+	padding: 10px;
+/*	background-color: gray;*/
 }
 .footer__ourinformations-p{
 	color: #fff;
 }
 .footer__ourinformations-logo{
-
-}
+	margin-top: 40px;
+} 
