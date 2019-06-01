@@ -5,16 +5,101 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=MontserratMuli&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<header class="quickcash__block">
+				<div class="quickcash">
+					<img class="quickcash__bigpicture" src="assets/header.svg" alt="woman in the plantation">
+					<h1 class="header__title">Quickcash</h1>
+				</div>
+					<nav>
+						<a class="navlink" href="">About us</a>
+						<a class="navlink" href="">Our products</a>
+						<a class="navlink" href="">Contact</a>
+					</nav>
+			<p class="menu">Menu</p>
+		</header>
+		<div class="imagen">
+			<div class="text">
+				<p class="textimage">Breaking the boundaries between urban and rural áreas!</p>
+			</div>
+			<div class="div__lineargradiente">			
+			</div>
+		</div>
 		<main>
+			<section class="ourproducts">
+				<h1 class="ourproducts__title">Our Products</h1>
+			<div class="ourproductsPrincipal">
+				<div class="ourproducts__block">
+					<p class="ourproducts__blockTitle">Cash to Cash</p>
+					<img class="ourproducts__images" src="assets/cash.png" alt="cash">
+				<div class="ourproducts__divparagraphs">
+						<p class="ourproducts__paragraphs">Transfer of money from one individual to another </p>
+				</div>
+				</div>
+				<div class="ourproducts__block">
+					<p class="ourproducts__blockTitle">Cash to Card</p>
+					<img class="ourproducts__images" src="assets/card.png" alt="card">
+					<div class="ourproducts__divparagraphs">
+					<p class="ourproducts__paragraphs">Tansfer of money from an individual onto a card</p>
+				</div>
+				</div>
+				<div class="ourproducts__block">
+					<p class="ourproducts__blockTitle">Cash to Account</p>
+					<img class="ourproducts__images" src="assets/account.png" alt="account">
+				<div class="ourproducts__divparagraphs">
+						<p class="ourproducts__paragraphs">Transfer of money from an individual to a bank account</p>
+				</div>
+				</div>
+				<div class="ourproducts__block"> 
+					<p class="ourproducts__blockTitle">Nos Valeurs</p>
+					<img class="ourproducts__images" src="assets/valeurs.png" alt="values">
+				<div class="ourproducts__divparagraphs">
+					<p class="ourproducts__paragraphs">Solidarité - Ecouté Responsabilité - Volanté Innovation - Réactivité</p>
+				</div>
+				</div>
+				</div>
+			</section>
+			<section class="simulate">
+				<div class="simulate__blockTransfer"></div>
+				<div class="simulate__blockCountries">
+					<h1 class="simulate__title">Simulate your transfer</h1>
+					<p class="simulate__paragraph">QuickCash is currently available in these countries:</p>
+				<div class="simulate__divimages">
+					<img class="simulate__imagecountries" src="assets/Costa-do-marfim.png" title="Ivory" alt="Ivory">
+					<p class="simulate__titleimages">Ivory</p>
+				</div>
+				<div class="simulate__divimages">
+					<img class="simulate__imagecountries" src="assets/BurkinaFaso.png" title="Burkina" alt="Burkina">
+					<p class="simulate__titleimages">Burkina</p>
+				</div>
+				<div class="simulate__divimages">
+					<img class="simulate__imagecountries" src="assets/mali.png" title="Mali" alt="Mali">
+					<p class="simulate__titleimages">Mali</p>
+				</div>
+				<div class="simulate__divimages">
+					<img class="simulate__imagecountries" src="assets/Niger.png" title="Niger" alt="Niger">
+					<p class="simulate__titleimages">Niger</p>
+				</div>
+				<div class="simulate__divimages">
+					<img class="simulate__imagecountries" src="assets/Togo.png" title="Togo" alt="Togo">
+					<p class="simulate__titleimages">Togo</p>
+				</div>
+				</div>
+			</section>
+			<section class="slide">
+				<div class="slide__block"></div>
+				<div class="slide__blockdescription">
+					<h1 class="slide__description">Writing a new page in the history of money transfer along with you!</h1>
+				</div>
+			</section>
 			<section class="agency">
-				<img class="agency__pictureglobo" src="assets/noun_Globe_1368242.png">
+				<img class="agency__pictureglobo" src="assets/noun_Globe_1368242.png" alt="globe">
 				<h1 class="agency__title">Find an agency near you!</h1>
 				<form class="agency__form">
                 	<label class="agency__label" for="country">Country</label>
-              	<select id="country" name="country" placeholder="Country">
+              	<select id="country" name="country">
                     <option value="country">Country</option>
                     <option value="Ivory">Ivory Coast</option>
                     <option value="Burkina">Burkina Faso</option>
@@ -23,7 +108,7 @@
                     <option value="Togo">Togo</option>
                	</select>
                		<label class="agency__label" for="state">State</label>
-	           		<select name="state" id="state" placeholder="State" >
+	           		<select name="state" id="state">
 					<option value="country">Country</option>
                     <option value="Ivory">Ivory Coast</option>
                     <option value="Burkina">Burkina Faso</option>
@@ -32,7 +117,7 @@
                     <option value="Togo">Togo</option>
 				</select>
 					<label class="agency__label" for="city">City</label>
-				<select name="city" id="city" placeholder="City" >
+				<select name="city" id="city">
 					<option value="country">Country</option>
                     <option value="Ivory">Ivory Coast</option>
                     <option value="Burkina">Burkina Faso</option>
@@ -41,9 +126,9 @@
                     <option value="Togo">Togo</option>
 				</select>
 				<button class="button__search">
-					<a href="">SEARCH</a>	
+					<a href="#">SEARCH</a>	
 				</button>
-			</form>
+				</form>
 				<div class="agency__blockmap">
 				<div>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7718.717995121278!2d-3.984081587548322!3d5.3485668109605955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlateau+Tour+BIAO!5e0!3m2!1spt-BR!2sbr!4v1558968668634!5m2!1spt-BR!2sbr" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -53,10 +138,10 @@
 			</section>
 			<section class="social__block--socialnews">
 			<section>
-					<h1 class="social__title">Social Impact</h1>
+				<h1 class="social__title">Social Impact</h1>
 				<div class="social__block">
 					<div class="social__block--imagem">
-						<img class="social__imagem" src="assets/forum-mondiale.jpg">
+						<img class="social__imagem" src="assets/forum-mondiale.jpg" alt="forum">
 					</div>
 					<div>
 						<h2 class="social__subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</h2>
@@ -69,19 +154,19 @@
 						<p class="social__paragraph">Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets.</p>
 					</div>
 					<div class="social__block--imagem">
-						<img class="social__imagem" src="assets/atelier-secteur-agricole.jpg">
+						<img class="social__imagem" src="assets/atelier-secteur-agricole.jpg" alt="atelier">
 					</div>
 				</div>
 				<div class="social__block">
 					<div class="social__block--imagem">
-						<img class="social__imagem" src="assets/forum-mondiale.jpg">
+						<img class="social__imagem" src="assets/forum-mondiale.jpg" alt="forum">
 					</div>
 					<div>
 						<h2 class="social__subtitle">QuickCash au forum de Lille sur la RSE</h2>
 						<p class="social__paragraph">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.</p>
 					</div>
 				</div>
-				<a href=""><p class="social__showmore">< Show more ></p></a>
+				<a href="#"><p class="social__showmore">< Show more ></p></a>
 			</section>
 			<section class="news__block--responsive">
 				<div class="news__block">
@@ -97,7 +182,7 @@
 					<p class="news__paragraph">QuickCash honored at the National Day of Excellence 2014</p>
 					<p class="news__paragraph">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the presidential palace, the ceremony was graced by the presence of the presidential couple, members of the government, diplomatic and responsible institution.</p>
 					<button class="button__search">
-					<a href="">< Show more News ></a>	
+					<a href="#">< Show more News ></a>
 				</button>
 				</div>
 			</section>
@@ -105,24 +190,24 @@
 			<section>
 				<h1 class="partners__title">Banking Partners</h1>
 				<div class="partners__block--picture">
-					<img class="partners__picture" src="assets/asusu.png">
-					<img class="partners__picture" src="assets/banque-populaire.png">
-					<img class="partners__picture" src="assets/boa-vert-bf.png">
-					<img class="partners__picture" src="assets/sonapost.png">
-					<img class="partners__picture" src="assets/cnce.png">
+					<img class="partners__picture" src="assets/asusu.png" alt="bank">
+					<img class="partners__picture" src="assets/banque-populaire.png" alt="bank">
+					<img class="partners__picture" src="assets/boa-vert-bf.png" alt="bank">
+					<img class="partners__picture" src="assets/sonapost.png" alt="bank">
+					<img class="partners__picture" src="assets/cnce.png" alt="bank">
 				</div>
 				<h1 class="institutional__title">Institutional partners</h1>
 				<div class="institutional__title">
-					<img class="partners__picture" src="assets/inovapay.png">
-					<img class="partners__picture" src="assets/logo2.png">
-					<img class="partners__picture" src="assets/moneytrans.png">
-					<img class="partners__picture" src="assets/stanford.png">
-					<img class="partners__picture" src="assets/camec.png">
-					<img class="partners__picture" src="assets/chamber-trust.png">
+					<img class="partners__picture" src="assets/inovapay.png" alt="partners">
+					<img class="partners__picture" src="assets/logo2.png" alt="partners">
+					<img class="partners__picture" src="assets/moneytrans.png" alt="partners">
+					<img class="partners__picture" src="assets/stanford.png" alt="partners">
+					<img class="partners__picture" src="assets/camec.png" alt="partners">
+					<img class="partners__picture" src="assets/chamber-trust.png" alt="partners">
 				</div>
 			</section>
-		</main>
-		<footer>
+	</main>
+	<footer>
 			<div class="footer__principal>
 				<div class="footer__image">
 					<img class="footer__image--responsive" src="assets/circulos-vermelhos.png" alt="simbolo footer">
