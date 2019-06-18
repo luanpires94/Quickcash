@@ -76,7 +76,7 @@ nav{
 	font-family: Montserrat,sans-serif;
 	font-weight: 700;
 }
-@media(max-width: 1024px){     
+@media(max-width: 768px){     
 	.imagen{
 		height:70vh;
 	}
@@ -86,7 +86,7 @@ nav{
  }
 @media(max-width: 768px){
 	.imagen{
-		height:75vh;
+		height: 58vh;
 		padding:126px;
 		padding-left:0px;
 	}
@@ -96,20 +96,6 @@ nav{
 	}
 	.textimage{
 		font-size:39px;
-	}
-}
-@media(max-width: 848px){
-	.imagen{
-		height:50vw;
-		padding:130px;
-		padding-left:0px;
-	}
-	.text{                      
-		width:28vw;
-	}
-	.textimage{
-		font-size:40px;
-		padding-bottom:40px;
 	}
 }
 @media(max-width: 768px){
@@ -125,7 +111,7 @@ nav{
 		font-size:30px;
 	}
 }
-@media(max-width: 600px){
+@media(max-width: 768px){
 	.imagen{
 		padding:92px;
 		padding-left:0;
@@ -154,10 +140,12 @@ nav{
 }
 select{
 	width: 250px;
-	border: 0;
+	border: none;
 	border-bottom: 1px solid black;
-	margin: 5% 0 5% 0;
 	background-color: #F8F8F8;
+	margin: 20px 0px;
+	font-family: 'Montserrat', sans-serif;
+	color: #6b6b6b;
 }
 @media(max-width: 900px){
 		select{
@@ -176,10 +164,9 @@ button {
     overflow: hidden;
     background-color: #F8F8F8;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 	.agency{
-		flex-wrap: wrap;
-		position: none;
+		flex-direction: column;
 	}
 }
 .agency__title{
@@ -191,28 +178,37 @@ button {
     font-family: 'Montserrat', sans-serif;
     position: relative;
 }
+@media(max-width: 768px){
+	.agency__title{
+		margin-left: 2rem;
+	}
+}
 .agency__pictureglobo{
     width:300px;
 	position: absolute;	
 	top: 25%;
 	left: -5%;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 		.agency__pictureglobo{
 			display: none;
 		}
 }
 .agency__form{
-	width: 200px;
-	margin: 60px 0 0 0;
+	width: 25%;
 	color:#6B6B6B;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 		.agency__form{
 			width: 90vw;
 			display: flex;
 			justify-content: center;
-			margin-left: 0;
+			margin-left: 2rem;
 			flex-wrap: wrap;
 		}		
 }
@@ -224,6 +220,7 @@ button {
 }
 .button__search{
 	margin: 20px 0 0 50px;
+	text-transform: uppercase;
 }
 .agency__blockmap{
 	min-height: 45vh;
@@ -241,12 +238,17 @@ button {
 	color: #0083CA;
 	padding: 30px 0 10px 30px;
 }
+@media (max-width: 1024px){
+	.social__title{
+		margin: 0 0 0 2.5rem;
+	}
+}
 .social__block{
 	display: flex;
 	box-shadow: 0px 5px 5px 5px #F5F5F5;
 	width: 50vw;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 	.social__block{
 		flex-wrap: wrap;
 	}
@@ -256,7 +258,7 @@ button {
 	box-shadow: 0px 5px 5px 5px #F5F5F5;
 	width: 50vw;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 	.social__block--reverse{
 		flex-wrap: wrap-reverse;
 	}
@@ -278,7 +280,7 @@ button {
 	font-size: 0.8rem;
 }
 .social__showmore{
-	margin: 0 0 0 25%;
+	text-align: center;
 	padding: 10px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -286,7 +288,7 @@ button {
 	display: flex;
 	justify-content: space-around;
 }
-@media(max-width: 1024px){
+@media(max-width: 768px){
 	.social__block--socialnews{
 		flex-wrap: wrap;
 	}
@@ -296,13 +298,23 @@ button {
 }
 .news__block--responsive{
 	background-color: #FFF3F2;
-	margin: 30px;
+	margin: 2rem;
 }
-@media (max-width: 600px){
+@media (max-width: 1024px){
 	.news__block--responsive{
 		width: 100%;
 		flex-wrap: wrap;
+		margin-left:10rem;
+	}
+}
+@media (max-width: 768px){
+	.news__block--responsive{
 		margin: 0;
+	}
+}
+@media (max-width: 425px){
+	.news__block--responsive{
+		margin:0;
 	}
 }
 .news__title{
@@ -317,8 +329,12 @@ button {
 }
 .news__block--paragraph{
 	padding: 20px;
-	margin: 20px;
 	font-size: 1rem;
+}
+@media (max-width: 320px){
+	.news__block--paragraph{
+		margin-left: 5rem;
+	}
 }
 .news__paragraph{
 	width: 360px;
@@ -329,7 +345,7 @@ button {
 	margin: 0 0 0 25%;
 	color: #6B6B6B;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 	.partners__title{
 	display: flex;
 	justify-content: space-around;
@@ -353,7 +369,7 @@ button {
 	color: #6B6B6B;
 	flex-wrap: wrap;
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
 	.institutional__title{
 	display: flex;
 	justify-content: space-around;
@@ -884,7 +900,7 @@ footer{
 	background-color: #EE3325;
 	flex-wrap: wrap;
 }
-@media(max-width: 500px){
+@media(max-width: 425px){
 	footer{
 		flex-direction: column;
 		align-items: center;
@@ -913,7 +929,6 @@ footer{
 
 .footer__contact{
 	display: flex;
-	width: 30vw;
 }
 .desenvolvido__paragraph{
 	font-size: 0.6rem;
